@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="ul.css">
+</head>
+<body>
+ <nav>
+  <ul class="a">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resourse.html">Course</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="neibu.html">Internal site</a></li>
+  </ul>
+</nav>
+<script>
+  function validateform(){  
+  var name=document.myform.name.value;
+  if  (name==""){
+    alert("Please enter the correct word");
+    return false;}
+if (name.length!=6){
+    alert("Please enter the correct word");
+    return false;}
+ if (!isNaN(name)){
+    alert("Please enter the correct word");
+    return false;}
+  return true;
+}
+</script>
+<div class="xxxx">
+  <form name="myform" method="post" action="index.html" onsubmit="return validateform();">
+    <label for="fname">Are you a parent or a student</label><br>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="content">
+  <h2>The school curriculum<img src="p8.png"style="width:70px;height:70px;margin-left:10px;"></h2>
+  <table><img src="p7.png" style="width:170px;height:170px;margin-left:130px;">
+  <tr>
+    <td>International college</td>
+    <td><a href="The application of English.html">The application of English</a></td>
+    <td>Study the basic theoretical knowledge of the English language</td>
+  </tr>
+    <tr>
+    <td>International college</td>
+    <td><a href="The application of French.html">The application of French</a></td>
+    <td>Study the basic theoretical knowledge of French language</td>
+  </tr>
+    <tr>
+    <td>International college</td>
+    <td><a href="Computer application technology.html">Computer application technology</a></td>
+    <td>To study the theory, method and technology of computer application in various fields</td>
+  </tr>
+    <tr>
+    <td>International college</td>
+    <td><a href="Big data and accounting.html">Big data and accounting</a></td>
+    <td>Data extraction and integration, data analysis</td>
+  </tr>
+  <tr>
+    <td>International college</td>
+    <td><a href="Customs and foreign trade services.html">Customs and foreign trade services</a></td>
+    <td>Analysis and treatment of foreign trade</td>
+  </tr>
+  <tr>
+    <td>International college</td>
+    <td><a href="Financial services and management.html">Financial services and management</a></td>
+    <td>The management of monetary funds</td>
+  </tr>
+</table>
+</div>
+<div class="sidenav">
+  <a href="resourse.html" title="Go to International college">International college</a>  
+  <ul class="b">
+    <li><a class="dd" href="The application of English.html">The application of English</a></li>
+    <li><a class="dd" href="The application of French.html">The application of French</a></li>
+    <li><a class="dd" href="Computer application technology.html">Computer application technology</a></li>
+    <li><a class="dd" href="Big data and accounting.html">Big data and accounting</a></li>
+    <li><a class="dd" href="Customs and foreign trade services.html">Customs and foreign trade services</a></li>
+    <li><a class="dd" href="Financial services and management.html">Financial services and management</a></li>
+  </ul> 
+  <a href="art.html">College of art</a>
+</div>
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  </style>
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+</body>
+</html>
